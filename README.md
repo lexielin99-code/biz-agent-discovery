@@ -1,45 +1,45 @@
 # biz-agent-discovery
 
-A Claude Code skill for marketing and e-commerce professionals who want to explore AI agent capabilities but don't know where to start.
+一个面向市场营销和电商运营从业者的 Claude Code skill，帮助你发现 AI agent 与实际业务的结合点。
 
-## What it does
+## 它做什么
 
-Instead of listing what AI *can* do in the abstract, this skill runs a short consultation: it asks about your actual work, matches the most relevant use cases, and generates a live HTML demo on the spot — so you see something concrete, not a feature list.
+不列抽象的功能清单——而是跑一次简短的问询：了解你的实际工作，匹配最相关的使用场景，当场生成一个 HTML demo，让你看到具体的东西，而不是一堆可能性描述。
 
-The demo is always framed as a starting point, not a ceiling.
+demo 永远是起点，不是终点。
 
-## Who it's for
+## 适合谁
 
-Senior marketing strategists and e-commerce operators who:
-- Already have Claude Code installed
-- Have real business problems but aren't sure how AI agents fit
-- Don't need hand-holding — they need a capable collaborator who takes initiative
+有一定业务深度的营销策划或电商运营人员：
+- 已经安装了 Claude Code
+- 有真实的业务问题，但不确定 AI agent 能插入哪里
+- 不需要手把手引导——需要一个主动协作、能直接上手的工作伙伴
 
-## How it works
+## 怎么运作
 
-**Phase 1 — Quick positioning**
-A few yes/no questions to zero in on your role and work patterns. No open-ended prompts.
+**阶段一：快速定位**
+几个是/否问题，锁定你的角色和日常工作重心。不问开放式问题。
 
-**Phase 2 — Live demo**
-Matches 1–2 scenarios from a capability library (22 scenarios across marketing, e-commerce, and universal use cases). Asks about your preferred dimension and granularity *before* building — the user drives the direction. Generates an interactive HTML file and opens it directly in the browser.
+**阶段二：现场 demo**
+从能力库（涵盖营销、电商、通用共 22 个场景）匹配 1–2 个最相关场景。生成前先问你想要什么维度和颗粒度——方向由你定，不替你做判断。生成交互式 HTML 文件，直接在浏览器中打开。
 
-**Phase 3 — Remix framing**
-Shows which dimensions can be changed: data source, output format, frequency, granularity. Helps you connect the demo to your own context.
+**阶段三：Remix 引导**
+告诉你哪些维度可以改：数据来源、输出格式、生成频率、拆解粒度。帮你把 demo 和自己的实际场景连接起来。
 
-**Phase 4 — Action suggestions**
-3 light suggestions to try next. Directional, not prescriptive.
+**阶段四：行动建议**
+3 个「可以试试看」的方向。有指向性，不是操作手册。
 
-## Capability coverage
+## 能力库覆盖范围
 
-| Area | Scenarios |
-|------|-----------|
-| Marketing | Monthly reports, strategy archiving, content SOPs, multi-platform copy, competitor briefs, A/B copy, user feedback mining, ad performance, KOL pitches |
-| E-commerce | Sales dashboards, ops SOP archiving, inventory health reports, promo planning, product copy batch, FAQ generation, SKU analysis, supplier emails |
-| Universal | Interactive HTML reports (PPT replacement), workflow documentation, meeting → action items, data → exec narrative, competitor research |
+| 方向 | 场景 |
+|------|------|
+| 营销 | 月度复盘报告、历史方案策略沉淀、内容批量生产 SOP、多平台内容扩展、竞品内容监测、邮件 A/B 文案、用户反馈挖掘、投放复盘报告、媒体/KOL 沟通草稿 |
+| 电商运营 | 销售数据看板、运营规范沉淀、库存健康度报告、大促节奏规划、商品文案批量优化、客服 FAQ 生成、SKU/品类表现分析、供应商沟通邮件 |
+| 通用 | 交互式 HTML 报告（替代 PPT）、工作流文档沉淀、会议纪要→行动项、数据→管理层叙事、竞品研究摘要 |
 
-## Installation
+## 安装方式
 
-Copy `SKILL.md` and `capability-library.md` into your Claude skills directory:
+将 `SKILL.md` 和 `capability-library.md` 放入 Claude skills 目录：
 
 ```
 ~/.claude/skills/biz-agent-discovery/
@@ -47,11 +47,11 @@ Copy `SKILL.md` and `capability-library.md` into your Claude skills directory:
 └── capability-library.md
 ```
 
-Claude Code will detect it automatically. Trigger it by describing your role or asking about AI use cases in your work.
+Claude Code 会自动识别。告诉它你的角色或者你在业务上遇到的问题，skill 会自动触发。
 
-## Design principles
+## 设计原则
 
-- **Demo is a probe, not a boundary** — always emphasizes it's one possibility among many
-- **Treat users as smart** — shows the capability space, lets them make the connections
-- **Ask before deciding** — never picks dimension or granularity on behalf of the user; the Q&A process is where discovery happens
-- **Proactive, not reactive** — asks for your materials directly rather than waiting for you to describe problems
+- **Demo 是探针，不是边界** — 每次演示后都强调这只是可能性的一部分
+- **把用户当聪明人** — 展示能力空间，让他们自己做联想，不过度解释
+- **问再决定** — 不替用户判断维度和颗粒度，问答过程本身就是发现的过程
+- **主动索取，不被动等待** — 直接说「把 XX 发给我」，不等用户描述痛点
